@@ -9,9 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
   <!--Подключение шрифта с Google fonts-->
-  <link rel="stylesheet" href="./src/assets/css/reset.css" />
+  <link rel="stylesheet" href="../assets/css/reset.css" />
   <!--Подключение файла со сбрасыванием стилей-->
-  <link rel="stylesheet" href="./src/assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
   <!--Подключение файла со стилями-->
   <title>Cutaway</title><!--Отображение название страницы-->
 </head>
@@ -20,37 +20,26 @@
 <body>
   <header><!--Шапка страницы-->
     <nav><!--Навигация-->
-      <div class="navbar-icon"><img src="./src/assets/images/icons8-шрек-48.png" alt="main icon"></div>
+      <div class="navbar-icon"><img src="../assets/images/icons8-шрек-48.png" alt="main icon"></div>
       <!--Изображение(что-то типа логотипа)-->
       <ul class="navbar-menu"><!--Маркированный список с ссылками на связанные страницы-->
         <li>
-          <a href="#" class="navbar__element">Главная</a>
+          <a href="../../index.html" class="navbar__element">Главная</a>
         </li><!--Элемент списка, содержащий ссылку-->
         <li>
-          <a href="./src/pages/aboutUs.html" class="navbar__element">Про меня</a>
+          <a href="../pages/aboutUs.html" class="navbar__element">Про меня</a>
         </li>
         <li>
-          <a href="./src/pages/contacs.html" class="navbar__element">Контакты</a>
+          <a href="#" class="navbar__element">Контакты</a>
         </li>
       </ul>
     </nav>
   </header>
   <main><!--Тэг содержит основной контент страницы-->
     <div class="container"><!--Использование класса для ограничения ширины контента-->
-      <h1>Визитная карточка</h1><!--Заголовок первого уровня-->
-      <p>Меня зовут Ксения!
-        Данная визитка состоит из трех частей:</p><br>
-      <ol><!--нумерованый список-->
-        <li>
-          <span>Главная страница</span>
-        </li>
-        <li>
-          <span>Информация про меня</span>
-        </li>
-        <li>
-          <span>Контакты</span>
-        </li>
-      </ol>
+      <h1>Контакты</h1><!--Заголовок первого уровня-->
+      <p> Телефон для связи: <strong>8-800-555-35-35</strong> </p>
+      <p> Email - Example@kf.com</p>
       <!--Основной текст-->
     </div>
   </main>
@@ -58,7 +47,7 @@
     <div class="container">
       <div class="footer-flex"><!--Добавление класса для использования Flexbox-->
         <span>SkillFactory</span><!--Текст-->
-        <img src="./src/assets/images/SkillFactory.png" alt="SkillFactory">
+        <img src="../assets/images/SkillFactory.png" alt="SkillFactory">
       </div>
     </div>
   </footer>

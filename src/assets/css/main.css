@@ -1,7 +1,133 @@
-/* :root {
-  --background-primary: #ff0022;
+:root {
+  --header-font: 'Dancing Script', cursive;
+  /*Переменная для подключенного шрифта  */
 }
 
-body {
-  background-color: var(--background-primary);
-} */
+header {
+  font-family: var(--header-font);
+  /*Применение шрифта к блоку header   */
+  background-color: #ffe4c4;
+  /*Цвет бэграунда блока header  */
+}
+
+nav {
+  display: flex;
+  /*Использование flexbox для гибкости контента, применение к блоку nav */
+  align-items: center;
+  /*Выравнивание элементов по вертикали по центру */
+  justify-content: space-around;
+  /*Выравнивание элементов по горизонтали. Расстояние между соседними элементами одинаковое, также есть отступ от краев */
+  height: 200px;
+  /*Высота блока nav 200 пикселей*/
+}
+
+.navbar-icon {
+  cursor: pointer;
+  /*Изменение срелки мыши на курсор*/
+}
+
+.navbar-menu {
+  display: flex;
+  text-decoration: none;
+  /*убрать декорирование текста*/
+  gap: 50px;
+  /*расстояние между элементами 50 пикселей*/
+  font-size: 25px;
+  /*Размер шрифта 25 пикселей*/
+  color: black;
+  /*Цвет текста- черный*/
+}
+
+.navbar__element {
+  display: inline-block;
+  /*Элемент блочно-строчный*/
+  border: 2px solid #CDAF95;
+  /*Граница толщиной в 2 пикселя, сплошная, цвет границы*/
+  background-color: #CDAF95;
+  border-radius: 3px;
+  /*Скругление границы 3 пикселя*/
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  /*transitio - свойство отражающее состояние перехода элемента. transform - свойство трансформирует элемент,
+  0.3s время выполнения перехода, ease- скорость перехода*/
+}
+
+.navbar__element:hover {
+  /*hover - псевдокласс, определющий элемент в момент его фокусировки*/
+  cursor: pointer;
+  background-color: #8B7765;
+  border: 2px solid #8B7765;
+  border-radius: 3px;
+  transform: translateY(-5px);
+  /*Перемещение элемента на 5 пикселей вверх*/
+}
+
+.navbar-menu a {
+  padding: 5px 9px 5px 5px;
+  /*Внутренний отступ ссылки. От верха 5 пикселей, справа 9 пикселей, снизу и слева 5 пикселей*/
+  color: black;
+}
+
+main {
+  background-color: rgb(185, 196, 206);
+  height: 300px;
+}
+
+main h1 {
+  display: flex;
+  justify-content: center;
+  font-family: var(--header-font);
+  font-size: 50px;
+  padding-top: 20px;
+  /*Внутренний верхний отступ*/
+
+}
+
+main p {
+  margin-top: 10px;
+  font-family: var(--header-font);
+  font-size: 20px;
+  line-height: 25px;
+  /*Высотка строки(расстояние между строками текста)*/
+}
+
+main p strong {
+  font-weight: 900;
+  /*Толщина шрифта - жирный*/
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /*Применение шрифта к тегу strong в теге p в main*/
+}
+
+main ol {
+  font-family: var(--header-font);
+}
+
+.container {
+  width: 1160px;
+  /*Ширина контейнера для ограничения контента*/
+  margin: 0 auto;
+  /*Внешний отступ*/
+  padding: 0;
+}
+
+footer {
+  font-family: var(--header-font);
+  background-color: #ffe4c4;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer span {
+  font-size: 30px;
+}
+
+footer img {
+  width: 150px;
+  height: 40px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
